@@ -21,3 +21,6 @@ Um sistema em que você pode criar um personagem salvar seus dados e editar suas
 - 2 : Criação de card a partir de ajax
 - 3 : 
 
+
+## Pesquisas
+- 1 : Elementos graficos e afins (https://www.chartjs.org/docs/latest/samples/area/radar.html)
