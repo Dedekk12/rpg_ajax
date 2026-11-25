@@ -19,7 +19,8 @@ Um sistema em que você pode criar um personagem salvar seus dados e editar suas
 ## A fazer : 
 - 1 : Criar página de login (beleza)
 - 2 : Criação de card a partir de ajax
-- 3 : 
+- 3 : Criação do banco e inserção de valores relevantes para testes
+  
 
 
 ## Pesquisas
