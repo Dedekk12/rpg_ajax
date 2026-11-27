@@ -5,7 +5,7 @@ class Connection
 {
     private static ?PDO $conn = null;
 
-    public static function getConnection() 
+    public static function getConnection()
     {
         if (self::$conn == null) {
             try {
@@ -18,14 +18,15 @@ class Connection
                 ];
 
                 $strConn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
-                self::$conn = new PDO($strConn, DB_USER , DB_PASSWORD , $opcoes);
+                self::$conn = new PDO($strConn, DB_USER, DB_PASSWORD, $opcoes);
             } catch (PDOException $e) {
                 echo "Erro ao conectar-se na base de dados!!!";
 
-                if(AMB_DEV)
+                if (AMB_DEV)
                     print_r($e);
             }
         }
-        
+
+        return self::$conn;
     }
 }

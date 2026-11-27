@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Tempo de geração: 26/11/2026 às 16:35
+-- Tempo de geração: 27/11/2026 às 11:24
 -- Versão do servidor: 10.6.18-MariaDB-0ubuntu0.22.04.1
 -- Versão do PHP: 8.1.29
 
@@ -299,8 +299,7 @@ ALTER TABLE `Armadura`
 --
 ALTER TABLE `Inventario`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `id_personagem` (`id_personagem`),
-  ADD KEY `id_item` (`id_item`);
+  ADD UNIQUE KEY `id_personagem` (`id_personagem`,`id_item`);
 
 --
 -- Índices de tabela `Item`
